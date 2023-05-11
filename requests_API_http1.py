@@ -17,6 +17,7 @@ def get_heroes_powerstats(heroes_list, stat_name) -> dict:
         [heroes_stat.setdefault(hero['name'], hero['powerstats'][stat_name]) for hero in data_all if hero['name'] == superhero]
     return heroes_stat
 
+
 if __name__ == '__main__':
     heroes = ['Hulk', 'Captain America', 'Thanos']
     stat = 'intelligence'
